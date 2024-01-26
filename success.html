@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-success.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+    <main class="wrapper">
+        <div class="box">
+            <div class="check">
+                <img src="assets/images/icon-success.svg" alt="">
+                <h1>Thanks for subscribing!</h1>
+                <p>A confirmation email has been sent to <span id="user"></span>. 
+                    Please open it and click the button inside to confirm your subscription.</p>
+                <div type="button" class="btn" id="dimiss-btn">
+                    <a href="index.html">Dismiss message</a>
+                </div>
+            </div>
+        </div>
+    </main>
+<script>
+    window.onload = () => {
+    // Retrieve the value from localStorage
+    const userEmail = localStorage.getItem("userEmail");
+
+    // Display the value on the page
+    const userText = document.getElementById("user");
+    if (userText) {
+        userText.innerHTML = userEmail;
+    }
+};
+
+</script>
+</body>
+</html>

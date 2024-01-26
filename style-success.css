@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+}
+
+body{
+    background-color: var(--Dark-Slate-Grey);
+    font-family: 'Roboto',sans-serif;
+    place-content: center;
+}
+.wrapper{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.box{
+    background-color: var(--White);
+    padding: 50px;
+    color: var(--Dark-Slate-Grey);
+    border-radius: 20px;
+    max-width: 400px;
+}
+
+.box .check{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box .check img{
+    height: 50px;
+    align-self: flex-start;
+}
+
+.box p{
+    line-height: 1.3rem;
+}
+
+.box p span{
+    font-weight: 700;
+}
+
+.btn{
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,82,214,1) 0%, rgba(255,120,62,1) 100%);
+}
+
+.btn a{
+    color: var(--White);
+    text-decoration: none;
+}
