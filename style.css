@@ -81,7 +81,7 @@ body{
 }
 
 .error-border:focus{
-    border: none;
+    border: 2px solid var(--Tomato);
     outline: 2px solid var(--Tomato);
     background-color:  hsla(4, 100%, 67%, 0.39);
 }
@@ -99,6 +99,11 @@ body{
     gap: 10px;
 }
 
+#newsletter .news-input #newsletter-input:focus{
+    outline: 1px var(--Dark-Slate-Grey) solid;
+    border: none;
+}
+
 label{
     color: var(--Charcoal-Grey);
     font-weight: 700;
@@ -107,8 +112,7 @@ label{
 #newsletter .news-input #newsletter-input{
     padding:  15px 20px;
     border-radius: 5px;
-    border: none;
-    outline: 1px solid var(--Grey);
+    border: 1px solid var(--Grey);
 }
 
 #subscribe-btn{
